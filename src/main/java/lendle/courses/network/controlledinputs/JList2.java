@@ -84,7 +84,9 @@ public class JList2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(jList1.getSelectedIndex()!=-1){
             //取得 DefaultListModel 並且刪除資料
-        
+        DefaultListModel model=(DefaultListModel) JLIst1.getmodel();
+        model.remove(JLIst1.getSelectedIndex());
+        JLIst1.updateUI();
             //////////////////////////////////
         }
     }//GEN-LAST:event_jButton2ActionPerformed
